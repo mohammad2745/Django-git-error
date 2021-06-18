@@ -10,8 +10,12 @@
 <p>Create new repository in github. In the terminal open project path. Then paste the following command</p>
 <code>git init</code><br/>
 <code>git add .</code><br/>
-<code>git first commit -m "Initial Commit"</code><br/>
+<code>git commit -m "Initial Commit"</code><br/>
 <code>git branch -M main</code><br/>
 <code>git remote add origin https://github.com/mohammad2745/Django-git-error.git</code><br/>
-<code>git push -u origin main</code>
+<code>git push -u origin main</code><br/><br/>
 
+<p>After Changing code process to add code in the existing repository</p>
+<code>git add .</code><br/>
+<code>git commit -m "Changes Applied"</code><br/>
+<code>git push -u origin main</code><br/><br/>
