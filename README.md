@@ -19,3 +19,19 @@
 <code>git add .</code><br/>
 <code>git commit -m "Changes Applied"</code><br/>
 <code>git push -u origin main</code><br/><br/>
+
+<p>To add .gitignore visit <code>gitignore.io</code>. And create .gitignore file in the main directory.</p>
+<br/><br/>
+<h3>Error Handling</h3>
+<p>While committing this error "fatal: remote origin already exists" may show.</p>
+<p>To solve this error, you should first check if the current remote associated with the “origin” keyword has the correct URL. You can do this using the git remote -v command:</p>
+<code>git remote -v</code><br/><br/>
+<p>You will see a list formatted like this:</p>
+<code>origin    https://github.com/career_karma_tutorials/git (fetch)<br/> 
+origin   https://github.com/career_karma_tutorials/git (push)</code>
+<br/><br/>
+<h6>The Solution </h6>
+<p>To remove the existing remote and add a new one, we can set a new URL for our remote:</p>
+<code>git remote rm origin</code><br/>
+<code>git remote add origin https://github.com/mohammad2745/Django-git-error</code><br/><br/>
+<p>This removes our existing “origin” remote and replaces the remote with a new one called “origin”, using the URL we have specified. But, this method uses two commands instead of the one that we used earlier.</p>
